@@ -1,6 +1,6 @@
 "use client";
 import { PDFDocument } from "pdf-lib";
-import { createContext, useContext, useState } from "react";
+import { createContext, SetStateAction, useContext, useState } from "react";
 
 export interface PdfObj {
   title: string;
@@ -13,6 +13,7 @@ export interface IGeneratePdfContext {
   addPdf: (_pdfObj: PdfObj) => void;
   deletePdf: (_title: string, _key: string) => void;
   generatePdf: () => Promise<string>;
+  setPdfs: (_value: SetStateAction<PdfObj[]>) => void;
 }
 
 const GeneratePdfContext = createContext<IGeneratePdfContext>({
@@ -20,6 +21,7 @@ const GeneratePdfContext = createContext<IGeneratePdfContext>({
   addPdf: (_pdfObj: PdfObj) => {},
   deletePdf: (_title: string, _key: string) => {},
   generatePdf: async () => "",
+  setPdfs: (_value: SetStateAction<PdfObj[]>) => {},
 });
 
 export const GeneratePdfProvider = ({
@@ -60,10 +62,11 @@ export const GeneratePdfProvider = ({
   };
 
   const value = {
-    pdfFiles: pdfs,
+    pdfFiles: pdfs.reverse(),
     addPdf,
     deletePdf,
     generatePdf: mergePDFs,
+    setPdfs,
   };
 
   return (
@@ -74,7 +77,7 @@ export const GeneratePdfProvider = ({
 };
 
 export const useGeneratePdfContext = () => {
-  const { pdfFiles, addPdf, deletePdf, generatePdf } =
+  const { pdfFiles, addPdf, deletePdf, generatePdf, setPdfs } =
     useContext(GeneratePdfContext);
-  return { pdfFiles, addPdf, deletePdf, generatePdf };
+  return { pdfFiles, addPdf, deletePdf, generatePdf, setPdfs };
 };

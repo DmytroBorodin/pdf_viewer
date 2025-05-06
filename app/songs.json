@@ -24,5 +24,42 @@
         "pdfLink": "https://drive.google.com/file/d/1pXme2rDREMvIFj00vbLcQS5FNjWyJgd_/view?usp=drive_link"
       }
     ]
+  },
+  {
+    "id": 3,
+    "title": "Зараз і на вічно",
+    "defaultKey": "Em",
+    "songData": [
+      {
+        "key": "Em",
+        "pdfLink": "https://drive.google.com/file/d/1FCYL1cRkCpOEm_I_IMBnDhZfScJjFfZc/view?usp=drive_link"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Не описати це ніяк",
+    "defaultKey": "Em",
+    "songData": [
+      {
+        "key": "Em",
+        "pdfLink": "https://drive.google.com/file/d/1DX81GUzM00_JRWsBMCFC-lsFfcLf800Y/view?usp=drive_link"
+      },
+      {
+        "key": "Am",
+        "pdfLink": "https://drive.google.com/file/d/1S4lP2GKXlJPVwaTOPE-spbxY_-NFaqYN/view?usp=drive_link"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Боже єдиний, нашу країну тримай",
+    "defaultKey": "Em",
+    "songData": [
+      {
+        "key": "Em",
+        "pdfLink": "https://drive.google.com/file/d/1yE79iKR5qKeQe64baHMSkpDodQFW2n4E/view?usp=drive_link"
+      }
+    ]
   }
 ]

@@ -1,5 +1,6 @@
 "use client";
 
+import DraggableList from "@/app/components/functional/DraggableList/DraggableList";
 import PDFViewer from "@/app/components/functional/PDFViewer/PDFViewer";
 import { useGeneratePdfContext } from "@/app/providers/generatePdfProvider";
 import { useRouter } from "next/navigation";
@@ -21,14 +22,7 @@ export default function PDFGenerator() {
   };
   return (
     <div className={classes.container}>
-      <ul className={classes.songs}>
-        {pdfFiles.map((item) => (
-          <li key={item.title + item.key}>
-            {item.title + " "}({item.key})
-            <button onClick={() => deletePdf(item.title, item.key)}>X</button>
-          </li>
-        ))}
-      </ul>
+      <DraggableList />
       {mergedUrl ? (
         <>
           <a href={mergedUrl} download="merged.pdf">
