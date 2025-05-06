@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "title": "Атмосфера",
+    "defaultKey": "Em",
+    "songData": [
+      {
+        "key": "Em",
+        "pdfLink": "https://drive.google.com/file/d/1k-Iz7iS3giN9Ke2sCMm1r2i0_qheKCav/view?usp=sharing"
+      },
+      {
+        "key": "Am",
+        "pdfLink": "https://drive.google.com/file/d/1qluch5ANsXiippTsIUh6lyRGxHipGnNu/view?usp=drive_link"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Битва належить Тобі",
+    "defaultKey": "Em",
+    "songData": [
+      {
+        "key": "Em",
+        "pdfLink": "https://drive.google.com/file/d/1pXme2rDREMvIFj00vbLcQS5FNjWyJgd_/view?usp=drive_link"
+      }
+    ]
+  }
+]

@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.songs {
+  list-style-type: none;
+  list-style-position: outside;
+  margin: 0;
+}
+
+.songs li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.songs li button {
+  padding: 4px 8px;
+  background-color: #fff;
+  color: red;
+  border-radius: 3px;
+  border: none;
+}

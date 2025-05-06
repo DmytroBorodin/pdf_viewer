@@ -1,0 +1,19 @@
+.pdf {
+  max-width: 100%;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.buttons button {
+  min-width: 100px;
+}
