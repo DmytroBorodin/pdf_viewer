@@ -62,7 +62,7 @@ export const GeneratePdfProvider = ({
   };
 
   const value = {
-    pdfFiles: pdfs.reverse(),
+    pdfFiles: pdfs,
     addPdf,
     deletePdf,
     generatePdf: mergePDFs,
