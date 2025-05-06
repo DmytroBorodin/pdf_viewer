@@ -1,4 +1,0 @@
-data base pass = kgl6Cu3vDvO33YMO
-user = dimabor96
-
-connection string = 'mongodb+srv://dimabor96:kgl6Cu3vDvO33YMO@cluster0.deperqg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
