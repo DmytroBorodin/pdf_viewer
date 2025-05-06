@@ -38,7 +38,7 @@ export default function PDFContainer({
       setPdfBlob(blob);
     };
     if (session) fetchPDFBlob();
-  }, [session, songKey]);
+  }, [session, songKey, docId]);
 
   const addToPdf = () => {
     const pdf = {
